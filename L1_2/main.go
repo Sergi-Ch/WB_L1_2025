@@ -5,8 +5,8 @@ import (
 	"sync"
 )
 
-func Quater(apperand int, wg *sync.WaitGroup) {
-	fmt.Println(apperand * apperand)
+func Quater(operand int, wg *sync.WaitGroup) {
+	fmt.Println(operand * operand)
 	wg.Done()
 }
 func main() {
