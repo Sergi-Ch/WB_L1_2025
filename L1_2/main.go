@@ -6,8 +6,9 @@ import (
 )
 
 func Quater(operand int, wg *sync.WaitGroup) {
+	defer wg.Done()
 	fmt.Println(operand * operand)
-	wg.Done()
+
 }
 func main() {
 	data := []int{2, 4, 6, 8, 10}
